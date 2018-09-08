@@ -1,0 +1,283 @@
+nav#header img {
+    width: 80px;
+}
+
+#header a.nav-link {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#header a.nav-link {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+a.nav-link.active {
+    background-color: #f5f3f3;
+    color: #343a40 !important;
+    transition: all 0.5s;
+}
+
+a.nav-link:hover:not(.text-platzi) {
+    /*background-color: #343a40;
+    color: #f5f3f3 !important;*/
+    background-color: #f5f3f3;
+    color: #343a40 !important;
+    border: 1px solid #92c23e !important;
+}
+
+.text-platzi {
+    color: #eee !important;
+    text-shadow: 1px 2px 15px rgba(1, 1, 1, 1);
+    /*text-shadow: 3px 1px 11px rgba(150, 150, 150, 1);*/
+    background: #92c23e !important;
+    transform: all 0.5s;
+}
+
+.text-platzi:hover {
+    text-shadow: none;
+    color: #343a40 !important;
+    background: #eee !important;
+    transform: all 0.5s;
+}
+
+/* Carrusel */
+main.carrusel .carousel-inner img {
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(55%);
+}
+
+#carouselExampleIndicators {
+    position: relative;
+}
+
+#carouselExampleIndicators .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: antiquewhite;
+}
+
+#carouselExampleIndicators .overlay .container,
+#carouselExampleIndicators .overlay .row {
+    height: 100%;
+}
+
+.btn-platzi {
+    background: #97c93e !important;
+    color: antiquewhite;
+    outline: none !important;
+}
+
+.btn-platzi:hover {
+    background: #82ad36 !important;
+    transition: all 0.5s;
+}
+
+/* CARDS */
+.img-contenedor {
+    overflow: hidden;
+    position: relative;
+    transition: all 0.7s;
+}
+
+.card .card-img-top {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.card:hover>* {
+    transition: all ease-in-out 0.7s;
+}
+
+.card:hover .card-img-top {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card:hover .img-contenedor:before {
+    position: absolute;
+    content: '';
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 0.7s;
+}
+
+/* Lugares */
+#place-time {
+    background-color: #343a40;
+    color: whitesmoke;
+}
+
+#place-time img {
+    max-width: 100%;
+}
+
+/* FORMULARIO */
+textarea.form-control-lg.form-control {
+    /*height: calc(2.875rem + 2px);*/
+}
+
+/* formulario */
+/* CUSTOMS */
+.abbr-platzi {
+    text-decoration: none !important;
+    position: relative;
+}
+
+.abbr-platzi:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dashed #97c93e;
+}
+
+/* /CUSTOMS */
+/* FOOTER */
+footer#footer {
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+}
+
+footer#footer div>a {
+    font-size: 14px;
+    color: azure;
+    text-decoration: none;
+}
+
+footer .marca-logo a {
+    display: block;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 81px;
+    height: 81px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .marca-logo a:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+footer .marca-logo a img {
+    animation: latidos 1s infinite;
+    transform-origin: center;
+}
+
+footer .marca-logo a:hover img {
+    animation: none;
+}
+
+footer .marca-logo #jd-button.jd-active {
+    background: #dc3545 !important;
+    border: 1px solid rgba(255, 255, 255, 1) !important;
+    transform: all 0.5s;
+}
+
+footer .marca-logo #jd-button.jd-active a {
+    border: 2px solid rgba(255, 255, 255, 1) !important;
+}
+
+footer .marca-logo #jd-button.jd-active a img {
+    animation: none !important;
+}
+
+footer .marca.logo {}
+
+footer .marca-logo a {
+    display: block;
+}
+
+footer .marca-logo a img {
+    width: 60px;
+}
+
+@keyframes latidos {
+    from {
+        transform: none;
+    }
+
+    20% {
+        transform: all 0.1s;
+    }
+
+    40% {
+        transform: scale(1.10);
+    }
+
+    50% {
+        transform: scale(1.11);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+/* Popover */
+.popover-header {
+    background-color: #97c93e !important;
+    color: #FFFFFF !important;
+}
+
+button.btn.btn-lg.btn-danger:hover {
+    background: #dc3545 !important;
+    border-radius: 50%;
+}
+
+button.btn.btn-lg.btn-danger {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    padding: 0 !important;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    a.nav-link.active,
+    a.nav-link,
+    a.nav-link:hover {
+        border: 1px solid transparent !important;
+        text-align: center;
+        background: inherit;
+    }
+
+    a.nav-link:hover:not(.text-platzi) {
+        border: 1px solid transparent !important;
+    }
+
+    /*div#navbarSupportedContent {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #92c23e;
+    }*/
+    .btn-platzi,
+    .btn-platzi:hover {
+        text-shadow: none !important;
+    }
+
+    button.navbar-toggler.collapsed {
+        border-color: #97c93e !important;
+    }
+
+    .navbar-dark .navbar-toggler {
+        outline: none !important;
+    }
+}
